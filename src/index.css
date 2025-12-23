@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  body {
+    @apply antialiased;
+    background: #eaeae8;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/60 border border-black/5 shadow-[0_12px_40px_rgba(12,63,157,0.10)];
+  }
+  
+  .glass-card-dark {
+    @apply backdrop-blur-xl bg-[rgba(12,63,157,0.92)] text-white border-white/10 shadow-[0_16px_60px_rgba(12,63,157,0.35)];
+  }
+  
+  .gradient-orange {
+    background: linear-gradient(135deg, #e65806, #f0954d);
+  }
+  
+  .gradient-blue {
+    background: linear-gradient(135deg, #0c3f9d, #608ac4);
+  }
+  
+  .runway-glow {
+    background: linear-gradient(90deg, transparent, #e65806, #608ac4, transparent);
+  }
+}
